@@ -79,10 +79,10 @@
 
     <link rel="alternate" type="application/rss+xml" href="index.xml" title="Blizzity" />
 
-    <link rel="icon" href='static-assets/images/blizzity-favicon.png' />
-    <link rel="icon" href='static-assets/images/cropped-blizzity_appicon_release-32x32.png' sizes="32x32" />
-    <link rel="icon" href='static-assets/images/cropped-blizzity_appicon_release-192x192.png' sizes="192x192" />
-    <link rel="apple-touch-icon" href='static-assets/images/cropped-blizzity_appicon_release-180x180.png' />
+    <link rel="icon" href="static-assets/images/blizzity-logo.svg" type="image/svg+xml" />
+    <link rel="icon" href='static-assets/images/cropped-blizzity-favicon-32x32.png' sizes="32x32" type="image/png" />
+    <link rel="icon" href='static-assets/images/cropped-blizzity-favicon-192x192.png' sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href='static-assets/images/cropped-blizzity-favicon-180x180.png' type="image/png" />
 
     <script type="application/ld+json">
         {
@@ -126,10 +126,6 @@
 
 
     <script data-is-blog-post="false" data-is-404="false" data-matomo-id="2" src="static-assets/js/analysis.js"></script>
-
-    <script type="text/javascript" src="../analytics.blizzity.de/matomo.js"></script>
-    <noscript style="position:absolute;bottom:0"><img src="https://analytics.blizzity.de/piwik.php?idsite=2&amp;rec=1"
-            style="border:0;" alt=""></noscript>
 
 </head>
 
@@ -321,7 +317,7 @@
         <section class="hero home-hero-alt gradient--purple-blurple relative overflow-hidden xl:px-0 pb-96">
             <div class="container text-center z-10 relative">
 
-                <h1 class="leading-tight mt-16 pt-0 mx-auto text-4xl xs:text-5xl xl:text-6xl font-semibold pb-3">
+                <h1 class="leading-tight mt-24 pt-0 mx-auto text-4xl xs:text-5xl xl:text-6xl font-semibold pb-3">
 
                     A free comprehensive video generator for everyone to create anything, anywhere
 
@@ -334,16 +330,7 @@
                 </div>
             </div>
             <picture>
-                <source media="(min-width: 768px)" srcset="/static-assets/images/optimized/desktop-hero-screenshot@1x.webp 1x,
-        /static-assets/images/optimized/desktop-hero-screenshot@2x.webp 2x,
-        /static-assets/images/optimized/desktop-hero-screenshot@3x.webp 3x" sizes="100vw" type="image/webp">
-                <source media="(min-width: 768px)" srcset="/static-assets/images/optimized/desktop-hero-screenshot@1x.png,
-        /static-assets/images/optimized/desktop-hero-screenshot@2x.png 2x,
-        /static-assets/images/optimized/desktop-hero-screenshot@3x.png 3x" sizes="100vw" type="image/png">
-                <source srcset="/static-assets/images/optimized/mobile-hero-screenshot@1x.webp 1x,
-        /static-assets/images/optimized/mobile-hero-screenshot@2x.webp 2x,
-        /static-assets/images/optimized/mobile-hero-screenshot@3x.webp 3x" sizes="100vw" type="image/webp">
-                <img class="br--not-ie absolute pt-5 max-w-333 md:max-w-6.5xl w-11/12 -translate-x-1/2 transform left-1/2" srcset="/static-assets/images/optimized/desktop.png 3x" sizes="100vw" src="static-assets/images/optimized/desktop-hero-screenshot%402x.png" alt="Blizzity Browser Screenshot">
+                <img class="br--not-ie absolute pt-5 max-w-333 md:max-w-6.5xl w-11/12 -translate-x-1/2 transform left-1/2" sizes="100vw" src="static-assets/images/desktop.png" alt="Blizzity Browser Screenshot">
             </picture>
             <svg xmlns="http://www.w3.org/2000/svg" class="br--not-ie absolute bottom-0 left-0 w-full origin-center transform scale-110" fill="none" viewBox="0 0 2262 263">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -363,7 +350,7 @@
             </div>
             <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
                 <source srcset="static-assets/images/remove-background.png" type="image/png" />
-                <img src="static-assets/images/remove-background.png" alt="Online Privacy Illustration" class="rounded-lg card p-0" />
+                <img src="static-assets/images/remove-background.png" alt="Auto Subtitles" class="rounded-lg card p-0" />
             </picture>
         </section>
 
@@ -378,8 +365,8 @@
                 </div>
             </div>
             <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
-                <source srcset="static-assets/images/subtitles.png" type="image/png" />
-                <img src="static-assets/images/subtitles.png" alt="Switch to Private Browsing Illustration" class="rounded-lg card p-0" />
+                <source srcset="static-assets/images/voice-output.png" type="image/png" />
+                <img src="static-assets/images/voice-output.png" alt="Voice Output" class="rounded-lg card p-0" />
             </picture>
         </section>
 
@@ -720,7 +707,7 @@
     </main>
     <div id="persistent-cta" class="transition transform duration-150 gradient--dark-purple-purple text-center sticky bottom-0 w-full 1.5xl:hidden br--not-blizzity br--not-safari opacity-0 translate-y-20 -mb-1 z-30">
         <a data-track-event data-event-category="Research" data-event-action="Persistent Download Button" data-event-name="Persistent Download Button" data-show-platform="false" class="download  btn btn--none btn--clear icon--download font-semibold text-white no-underline text-xl leading-4 block pt-6 pb-8 border-none mx-auto w-full max-w-full rounded-none not-ios not-android invisible opacity-0 transition-opacity duration-500"
-            data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://github.com/Blizzity/blizzity-releases/releases/latest/download">Download Blizzity</a>
+            data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://github.com/Blizzity/blizzity-releases/releases/latest/download">Downloadd Blizzity</a>
     </div>
 
     <footer class="site-footer section pb-12" data-theme="dark">

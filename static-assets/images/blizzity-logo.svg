@@ -1,7 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px">
-  <g fill="#ff3102" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-    <g transform="scale(5.12,5.12)">
-      <path fill="#ff3102" d="M44.08203,25.20703l2.82031,-4.77734c0.11328,-0.23828 0.12891,-0.51172 0.04297,-0.75781l-5.58594,-16c-0.17187,-0.48828 -0.68359,-0.76562 -1.17969,-0.64453l-16.41797,4c-0.3125,0.07813 -0.57031,0.30078 -0.69141,0.60156l-1.74609,4.37109h-5.32422c-0.27734,0 -0.54687,0.11719 -0.73437,0.32031l-12,13c-0.37109,0.40234 -0.35156,1.02734 0.04297,1.40234l12.58594,12c0.18359,0.17969 0.43359,0.27734 0.6875,0.27734h5.73828l1.75,4.37109c0.12891,0.32422 0.41797,0.55469 0.75781,0.61328l17.46094,3c0.05469,0.01172 0.11328,0.01563 0.16797,0.01563c0.46484,0 0.875,-0.32031 0.97656,-0.78516l3.54297,-16.23047c0.05469,-0.25 0.01172,-0.51172 -0.125,-0.73437zM21.32422,12l14.09375,-2.58203l-7.41797,14.58203h-16.83203zM22.32422,39l-11.15625,-11h16.83203l8.75,13.16797zM40.38672,38.89844l-8.38672,-12.89844l7.33203,-14.58203l4.75,13.79297z"></path>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.5 67.55">
+  <defs>
+    <linearGradient id="a88cbadfe-f49b-4aaa-bfec-abc7e3dde7e3" x1="13.13" y1="33.99" x2="31.05" y2="65.04" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.999594, -0.001639, 0.000234, 0.998784, -0.002636, 0.130017)">
+      <stop offset="0" style="stop-color: rgb(44, 124, 242);"/>
+      <stop offset="1" style="stop-color: rgb(17, 165, 255);"/>
+    </linearGradient>
+    <linearGradient id="b7bd4fb96-3a2e-4dd7-9c21-cd1ecebaecc6" x1="37.64" y1="47.38" x2="53.54" y2="19.84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: rgb(44, 119, 242);"/>
+      <stop offset="1" style="stop-color: rgb(17, 165, 255);"/>
+    </linearGradient>
+    <linearGradient id="c3eb55eef-dc0d-4ea7-a911-fe3a66c249d4" x1="38.58" y1="19.7" x2="1.59" y2="19.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color: rgb(44, 92, 242);"/>
+      <stop offset="1" style="stop-color: rgb(17, 165, 255);"/>
+    </linearGradient>
+  </defs>
+  <title>资源 27</title>
+  <g fill-rule="evenodd">
+    <path fill="url(#a88cbadfe-f49b-4aaa-bfec-abc7e3dde7e3)" d="M0 39.4v11.26l29.25 16.89 19.5-11.26L19.5 39.4V28.14L0 39.4z"/>
+    <path fill="url(#b7bd4fb96-3a2e-4dd7-9c21-cd1ecebaecc6)" d="M48.75 56.29l9.75-5.63V16.89L39 5.63V39.4l-9.75 5.63 19.5 11.26z"/>
+    <path fill="url(#c3eb55eef-dc0d-4ea7-a911-fe3a66c249d4)" d="M39 5.63L29.25 0 0 16.89V39.4l29.25-16.88L39 28.14V5.63z"/>
   </g>
 </svg>
