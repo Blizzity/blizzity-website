@@ -1,21 +1,83 @@
----
-permalink: /callback/
----
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				const urlParams = new URLSearchParams(window.location.search);
-				const code = urlParams.get('code');
-				if (code) {
-					window.location.href = `http://localhost:8081?code=${code}`;
-				}
-			});
-		</script>
-		</head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Callback</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            background-color: #101014;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: #18181c;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            width: 95%;
+            max-width: 450px;
+            border: 1px solid #61cdff;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 2;
+            margin: 10px 0;
+        }
+        .logo {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 0px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #61cdff;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            width: calc(100% - 30px);
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="default-content">
+        <img src="/static-assets/images/blizzity-logo.svg" alt="Blizzity Logo" class="logo">
+        <h1>It worked!</h1>
+        <p>You can close this window now.</p>
+    </div>
+    <div class="container" id="code-content" style="display: none;">
+        <img src="/static-assets/images/blizzity-logo.svg" alt="Blizzity Logo" class="logo">
+        <h1>Almost done!</h1>
+        <p>Click on "Continue", to close this window and to return to Blizzity.</p>
+        <a id="continue-button" href="#" class="button">Continue</a>
+    </div>
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        var code = getUrlParameter('code');
+        if (code) {
+            document.getElementById('default-content').style.display = 'none';
+            document.getElementById('code-content').style.display = 'block';
+            document.getElementById('continue-button').href = 'http://localhost:8081?code=' + code;
+        }
+    </script>
+</body>
 </html>
